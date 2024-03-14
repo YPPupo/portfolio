@@ -1,4 +1,5 @@
-import ProjectItem from "@/components/projectItem/projectItem";
+
+import ProjectItem from "@/components/projectItem/ProjectItem";
 import { projectItems } from "@/utils/constants";
 
 const Projects = () => {

@@ -1,4 +1,3 @@
-import React from "react";
 import { FaFacebook, FaLinkedin, FaSquareXTwitter } from "react-icons/fa6";
 import "./SocialPanel.css";
 
