@@ -3,10 +3,10 @@ import Me from "../../assets/aboutme.jpg";
 const AboutMe = () => {
   return (
     <div className="min-h-screen py-20 flex flex-col justify-center px-20">
-      <h3 className="font-bold text-4xl underline">About me</h3>
+      <h3 className="font-poppins font-bold text-4xl underline">About me</h3>
       <div className="grid grid-cols-2 ">
         <div className="flex items-center h-full px-10 py-8">
-          <p className="text-lg text-pretty">
+          <p className="text-lg text-pretty leading-relaxed">
             A proactive and knowledgeable Software Developer with expertise in
             JavaScript technologies. My strong analytical skills and commitment
             to continuous learning drive my pursuit of excellence. I excel in

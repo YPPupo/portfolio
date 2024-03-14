@@ -5,7 +5,7 @@ import Clouds from "../../components/clouds/Clouds";
 const HeroAnimation = () => {
   return (
     <div className="flex justify-center">
-      <div className="pt-[56px] bg-gradient-to-br w-[70%] from-sky-700 via-sky-500 to-sky-400 relative flex justify-center items-center overflow-hidden bg-transparent aspect-square rounded-full">
+      <div className="bg-gradient-to-br w-[70%] from-sky-700 via-sky-500 to-sky-400 relative flex justify-center items-center overflow-hidden bg-transparent aspect-square rounded-full">
         <motion.img
           src={Sun}
           height={300}
