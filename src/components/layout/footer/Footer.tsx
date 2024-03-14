@@ -2,7 +2,7 @@ import SocialPanel from "../../socialPanel/SocialPanel";
 
 const Footer = () => {
   return (
-    <div className="bg-white min-h-16 px-16 py-10">
+    <div className="bg-picton-blue-950 text-picton-blue-100 min-h-16 px-16 py-10">
       <div className="grid grid-cols-2">
         <div className="flex flex-col gap-5">
           <h2 className="font-poppins font-bold text-3xl">Yasel Pérez Pupo</h2>

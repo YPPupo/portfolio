@@ -17,7 +17,10 @@ const Hero = () => {
             and Web Applications that leads to the success of the overall
             product.
           </p>
-          <SocialPanel />
+          <div className="flex gap-5">
+            <button className="button">Download CV</button>
+            <SocialPanel />
+          </div>
         </div>
       </div>
 

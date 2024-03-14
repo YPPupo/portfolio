@@ -1,7 +1,32 @@
 import PanelImage from "@/assets/img/piedrasvivas_panel.png";
 import ApiImage from "@/assets/img/piedrasvivas_api.png";
 import AppImage from "@/assets/img/piedrasvivas_app.png";
+
 import AppPrayer from "@/assets/img//diario_de_oracion.png";
+
+import HTML from "@/assets/html-5.svg";
+import CSS from "@/assets/css-3.svg";
+import Javascript from "@/assets/javascript.svg";
+import Typescript from "@/assets/typescript.svg";
+import React from "@/assets/react.svg";
+import Angular from "@/assets/angular.svg";
+import Next from "@/assets/next-js.svg";
+import Vite from "@/assets/vite.svg";
+import Tailwind from "@/assets/tailwind.svg";
+
+import Nest from "@/assets/nest.svg";
+import MongoDb from "@/assets/mongodb.svg";
+import Postgresql from "@/assets/postgresql.svg";
+
+import Dart from "@/assets/dart.svg";
+import Flutter from "@/assets/flutter.svg";
+
+import Figma from "@/assets/figma.svg";
+import Git from "@/assets/git.svg";
+import Github from "@/assets/github.svg";
+import OpenAI from "@/assets/openai.svg";
+// import Tech from '@/assets/';
+// import Tech from '@/assets/';
 
 interface ExperienceItem {
   positionTitle: string;
@@ -82,8 +107,26 @@ export const projectItems = [
   },
   {
     title: "Prayer Diary",
-    description: "Prayer Diary is a purpose-built app for the Christian community. It comprises two main sections: Pending Prayers, where users can record their prayer requests, and the Answered Prayers section, which allows them to to track answered prayers in our lives, of God’s intervention. Overall, it serves as a valuable tool for maintaining prayer records, fostering faith, and strengthening spiritual bonds within the community.",
+    description:
+      "Prayer Diary is a purpose-built app for the Christian community. It comprises two main sections: Pending Prayers, where users can record their prayer requests, and the Answered Prayers section, which allows them to to track answered prayers in our lives, of God’s intervention. Overall, it serves as a valuable tool for maintaining prayer records, fostering faith, and strengthening spiritual bonds within the community.",
     techs: ["Flutter"],
     images: [AppPrayer],
   },
 ];
+
+export const techItems = {
+  frontend: [
+    HTML,
+    CSS,
+    Javascript,
+    Typescript,
+    React,
+    Angular,
+    Next,
+    Vite,
+    Tailwind,
+  ],
+  backend: [Nest, MongoDb, Postgresql],
+  mobile: [Dart, Flutter],
+  tech: [Figma, Git, Github, OpenAI],
+};

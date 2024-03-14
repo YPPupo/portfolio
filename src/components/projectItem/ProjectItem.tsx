@@ -10,7 +10,7 @@ interface Props {
 
 const ProjectItem = ({ title, images, description, techs }: Props) => {
   return (
-    <div className="grid grid-cols-[minmax(600px,_1fr)_minmax(900px,_2fr)] py-14 bg-picton-blue-950 px-10 rounded-xl">
+    <div className="grid grid-cols-[minmax(600px,_1fr)_minmax(900px,_2fr)] py-14 bg-picton-blue-950 px-10 rounded-3xl">
       <div className="col-span-1 w-full h-full ">
         <Carousel images={images} />
       </div>

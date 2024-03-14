@@ -3,9 +3,9 @@ import { motion } from "framer-motion";
 
 const Clouds = () => {
   const cloudVariants = {
-    initial: { opacity: 0 },
+    initial: { opacity: 0.5 },
     animate: { opacity: 1 },
-    exit: { opacity: 0 },
+    exit: { opacity: 0.5 },
   };
 
   const clouds = [
@@ -21,7 +21,7 @@ const Clouds = () => {
       {clouds.map((cloud, index) => (
         <motion.div
           key={index}
-          initial={{ opacity: 0, x: cloud.initialX }}
+          initial={{ opacity: 0.5, x: cloud.initialX }}
           animate={{ opacity: 1, x: "100%" }}
           exit={{ opacity: 0, x: cloud.initialX }}
           variants={cloudVariants}
