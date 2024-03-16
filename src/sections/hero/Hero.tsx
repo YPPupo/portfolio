@@ -3,7 +3,7 @@ import HeroAnimation from "../../components/hero-animation/HeroAnimation";
 
 const Hero = () => {
   return (
-    <div className="grid grid-cols-2 content-center min-h-screen max-h-screen w-full pt-[56px]">
+    <div className="flex flex-col items-center justify-center md:justify-start md:items-start md:grid md:grid-cols-2 content-center min-h-screen w-full pt-[56px]">
       <div className="col-span-1 flex h-full">
         <div className="max-w-lg m-auto space-y-4 px-5 py-12">
           <h1 className="font-poppins text-5xl font-bold">Yasel Pérez Pupo</h1>
@@ -25,7 +25,7 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="h-full col-span-1">
+      <div className="h-full col-span-1 hidden md:block">
         <HeroAnimation />
       </div>
     </div>

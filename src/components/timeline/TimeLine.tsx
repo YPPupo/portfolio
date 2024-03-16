@@ -1,22 +1,23 @@
 import { ExperienceItems } from "../../utils/constants";
 import TimeLineItem from "./TimeLineItem";
 
+const containerStyles = "flex items-center justify-between w-full gap-5 mb-8";
+const emptyContainerStyles = "order-1 hidden md:block md:w-5/12";
+const dateContainerStyles =
+  "hidden md:flex md:items-center order-1 h-8 px-4 bg-gray-800 rounded-lg shadow-xl";
+const dateStyles = " font-semibold text-white md:mx-auto text-nowrap";
+
 const TimeLine = () => {
   return (
-    <div className="container mx-auto w-full h-full">
-      <div className="relative wrap overflow-hidden p-10 h-full">
-        <div
-          className="border-2-2 absolute border-opacity-20 border-gray-700 h-full border"
-          style={{ left: "50%" }}
-        ></div>
+    <div className="container w-full h-full mx-auto">
+      <div className="relative h-full overflow-hidden wrap md:p-10">
+        <div className="absolute hidden h-full border border-gray-700 md:block border-2-2 border-opacity-20 left-1/2"></div>
 
         {/* First Section */}
-        <div className="mb-8 flex justify-between items-center w-full right-timeline">
-          <div className="order-1 w-5/12"></div>
-          <div className="flex items-center order-1 bg-gray-800 shadow-xl px-4 rounded-lg h-8">
-            <h1 className="mx-auto font-semibold text-white">
-              ene. 2023 - mar. 2024
-            </h1>
+        <div className={`${containerStyles} right-timeline`}>
+          <div className={emptyContainerStyles}></div>
+          <div className={dateContainerStyles}>
+            <h1 className={dateStyles}>{ExperienceItems[0].date}</h1>
           </div>
           <TimeLineItem
             positionTitle={ExperienceItems[0].positionTitle}
@@ -24,15 +25,11 @@ const TimeLine = () => {
             activities={ExperienceItems[0].activities}
             techs={ExperienceItems[0].techs}
           />
-          
         </div>
-
-        <div className="mb-20 flex justify-between flex-row-reverse items-center w-full left-timeline">
-          <div className="order-1 w-5/12"></div>
-          <div className="flex items-center order-1 bg-gray-800 shadow-xl px-4 rounded-lg h-8">
-            <h1 className="mx-auto text-white font-semibold">
-              feb. 2023 - nov. 2023
-            </h1>
+        <div className={`${containerStyles} md:flex-row-reverse left-timeline`}>
+          <div className={emptyContainerStyles}></div>
+          <div className={dateContainerStyles}>
+            <h1 className={dateStyles}>{ExperienceItems[1].date}</h1>
           </div>
           <TimeLineItem
             positionTitle={ExperienceItems[1].positionTitle}
@@ -42,15 +39,13 @@ const TimeLine = () => {
           />
         </div>
 
-        <div className="mb-20 flex justify-between items-center w-full right-timeline">
-          <div className="order-1 w-5/12"></div>
-          <div className="flex items-center order-1 bg-gray-800 shadow-xl px-4 rounded-lg h-8">
-            <h1 className="mx-auto text-white font-semibold">
-              jun. 2022 - feb. 2023
-            </h1>
+        <div className={`${containerStyles} right-timeline`}>
+          <div className={emptyContainerStyles}></div>
+          <div className={dateContainerStyles}>
+            <h1 className={dateStyles}>{ExperienceItems[2].date}</h1>
           </div>
 
-          <div className="order-1 w-5/12 flex flex-col gap-6 px-6 py-4">
+          <div className="flex flex-col order-1 w-full gap-6 py-4 md:w-5/12">
             <TimeLineItem
               positionTitle={ExperienceItems[2].positionTitle}
               companyName={ExperienceItems[2].companyName}
@@ -68,12 +63,10 @@ const TimeLine = () => {
           </div>
         </div>
 
-        <div className="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
-          <div className="order-1 w-5/12"></div>
-          <div className="flex items-center order-1 bg-gray-800 shadow-xl px-4 rounded-lg h-8">
-            <h1 className="mx-auto text-white font-semibold">
-              dic. 2021 - ago. 2022
-            </h1>
+        <div className={`${containerStyles} md:flex-row-reverse left-timeline`}>
+          <div className={emptyContainerStyles}></div>
+          <div className={dateContainerStyles}>
+            <h1 className={dateStyles}>{ExperienceItems[4].date}</h1>
           </div>
           <TimeLineItem
             positionTitle={ExperienceItems[4].positionTitle}

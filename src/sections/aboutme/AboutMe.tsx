@@ -2,10 +2,10 @@ import Me from "../../assets/aboutme.jpg";
 
 const AboutMe = () => {
   return (
-    <div className="min-h-screen py-20 flex flex-col justify-center px-20">
-      <h3 className="font-poppins font-bold text-4xl underline">About me</h3>
-      <div className="grid grid-cols-2 ">
-        <div className="flex items-center h-full px-10 py-8">
+    <div className="min-h-screen px-5 md:py-20 flex flex-col justify-center xl:px-20">
+      <h3 className="font-poppins font-bold mx-auto md:mx-0 text-4xl underline">About me</h3>
+      <div className="flex flex-col md:grid md:grid-cols-2 ">
+        <div className="flex items-center h-full lg:px-5 xl:px-10 py-8">
           <p className="text-lg text-pretty leading-relaxed">
             A proactive and knowledgeable Software Developer with expertise in
             JavaScript technologies. My strong analytical skills and commitment
@@ -19,8 +19,8 @@ const AboutMe = () => {
             project goals and drive success.
           </p>
         </div>
-        <div className="flex justify-center ">
-          <div className="w-[70%] overflow-hidden rounded-full flex justify-center aspect-square ">
+        <div className="hidden md:flex md:justify-center">
+          <div className="w-[90%] xl:w-[70%] overflow-hidden rounded-full flex justify-center aspect-square ">
             <img className="w-[120%]" src={Me} alt="me" />
           </div>
         </div>

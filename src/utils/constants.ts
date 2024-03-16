@@ -29,6 +29,7 @@ import OpenAI from "@/assets/openai.svg";
 // import Tech from '@/assets/';
 
 interface ExperienceItem {
+  date: string;
   positionTitle: string;
   companyName: string;
   activities: string[];
@@ -37,6 +38,7 @@ interface ExperienceItem {
 
 export const ExperienceItems: ExperienceItem[] = [
   {
+    date: "ene. 2023 - mar. 2024",
     positionTitle: "Fullstack Developer",
     companyName: "La Liguilla",
     activities: [
@@ -49,6 +51,7 @@ export const ExperienceItems: ExperienceItem[] = [
     techs: ["Angular", ".NET", "Figma", "Azure"],
   },
   {
+    date: "feb. 2023 - nov. 2023",
     positionTitle: "Frontend Developer",
     companyName: "Code Works Labs - Square Script Project",
     activities: [
@@ -60,6 +63,7 @@ export const ExperienceItems: ExperienceItem[] = [
     techs: ["React.js", "Firebase", "OpenAI", "Figma"],
   },
   {
+    date: "jun. 2022 - feb. 2023",
     positionTitle: "Frontend Developer",
     companyName: "Brandtech Labs - Reviewr Project",
     activities: [
@@ -72,6 +76,7 @@ export const ExperienceItems: ExperienceItem[] = [
     techs: ["React.js", "Tailwind", "React Query", "Stripe"],
   },
   {
+    date: "jun. 2022 - feb. 2023",
     positionTitle: "Frontend Developer",
     companyName: "Brandtech Labs - Amzhub Project",
     activities: [
@@ -84,6 +89,7 @@ export const ExperienceItems: ExperienceItem[] = [
   },
 
   {
+    date: "dic. 2021 - ago. 2022",
     positionTitle: "Fullstack Developer",
     companyName: "La Liguilla",
     activities: [

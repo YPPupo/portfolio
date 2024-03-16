@@ -44,22 +44,22 @@ const ContactMe = () => {
   };
 
   return (
-    <div className="min-h-screen relative py-20 px-20 flex flex-col">
-      <h2 className="font-poppins font-bold text-4xl underline">
+    <div className="relative flex flex-col min-h-screen px-5 md:py-20 md:px-20">
+      <h2 className="text-4xl font-bold underline font-poppins">
         Contact with me
       </h2>
-      <div className="grid grid-cols-2">
-        <div className="py-14">
+      <div className="grid grid-cols-1 md:grid-cols-2">
+        <div className="py-8 md:py-14">
         <form
           onSubmit={onSubmit}
-          className="flex flex-col gap-10 max-w-2xl py-7 px-7 backdrop-blur-sm bg-picton-blue-400/30 rounded-xl"
+          className="flex flex-col max-w-2xl gap-10 py-7 px-7 backdrop-blur-sm bg-picton-blue-400/30 rounded-xl"
         >
-          <div className="flex gap-5">
-            <label className="w-32" htmlFor="">
+          <div className="flex flex-col md:gap-5 md:flex-row">
+            <label className="w-32" htmlFor="name">
               Your name
             </label>
             <input
-              className="outline-none py-2 px-3 rounded-lg flex-1 max-w-md"
+              className="flex-1 max-w-md px-3 py-2 rounded-lg outline-none"
               type="text"
               placeholder="John Doe"
               value={formData.name}
@@ -67,12 +67,12 @@ const ContactMe = () => {
               name="name"
             />
           </div>
-          <div className="flex gap-5">
-            <label className="w-32" htmlFor="">
+          <div className="flex flex-col md:gap-5 md:flex-row">
+            <label className="w-32" htmlFor="email">
               Your email
             </label>
             <input
-              className="outline-none py-2 px-3 rounded-lg flex-1 max-w-md"
+              className="flex-1 max-w-md px-3 py-2 rounded-lg outline-none"
               type="text"
               placeholder="johndoe@gmail.com"
               value={formData.email}
@@ -80,12 +80,12 @@ const ContactMe = () => {
               name="email"
             />
           </div>
-          <div className="flex gap-5">
-            <label className="w-32" htmlFor="">
+          <div className="flex flex-col md:gap-5 md:flex-row">
+            <label className="w-32" htmlFor="message">
               Your message
             </label>
             <textarea
-              className="outline-none py-2 px-3 rounded-lg flex-1 max-w-md"
+              className="flex-1 max-w-md px-3 py-2 rounded-lg outline-none"
               cols={50}
               rows={10}
               placeholder="Hi..."
@@ -94,17 +94,17 @@ const ContactMe = () => {
               name="message"
             ></textarea>
           </div>
-          <div className="max-w-2xl flex justify-end">
+          <div className="flex justify-end max-w-2xl">
             <button
               type="submit"
-              className="bg-blue-600 w-fit px-5 py-3 rounded-3xl text-white font-bold ml-auto"
+              className="px-5 py-3 ml-auto font-bold text-white bg-blue-600 w-fit rounded-3xl"
             >
               Submit
             </button>
           </div>
         </form>
         </div>
-        <div className="flex flex-col gap-5">
+        <div className="flex flex-col gap-5 py-10">
           <h3 className="mx-auto text-3xl font-bold">What's next?</h3>
           <h5>
             If you have any suggestion, feedback, opportunity, or are interested

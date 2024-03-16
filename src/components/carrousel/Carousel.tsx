@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from "react";
 
-
-
 interface CarouselProps {
   images: string[];
 }
@@ -22,22 +20,13 @@ const Carousel: React.FC<CarouselProps> = ({ images }) => {
   };
 
   return (
-    <div className="relative w-full h-full">
-      {images.map((image, index) => (
-        <div
-          key={index}
-          className={`absolute w-full h-full transition-opacity duration-500 ${
-            index === currentImage ? "opacity-100" : "opacity-0"
-          }`}
-        >
-          <img
-            src={image}
-            alt={`Slide ${index + 1}`}
-            className="w-full h-full object-fill rounded-lg"
-          />
-        </div>
-      ))}
-      <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
+    <div className="relative w-full h-auto">
+      <img
+        className="object-fill w-full h-auto rounded-lg"
+        src={images[currentImage]}
+        alt="carousel"
+      />
+      <div className="absolute flex space-x-2 transform -translate-x-1/2 bottom-4 left-1/2">
         {images.map((_, index) => (
           <button
             key={index}
