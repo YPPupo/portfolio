@@ -1,4 +1,3 @@
-import "./Hero.css";
 import SocialPanel from "../../components/socialPanel/SocialPanel";
 import HeroAnimation from "../../components/hero-animation/HeroAnimation";
 
@@ -18,7 +17,9 @@ const Hero = () => {
             product.
           </p>
           <div className="flex gap-5">
-            <button className="button">Download CV</button>
+            <a href="@/assets/docs/cv.pdf" download >
+              <button className="button">Download CV</button>
+            </a>
             <SocialPanel />
           </div>
         </div>
