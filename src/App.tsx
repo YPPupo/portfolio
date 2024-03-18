@@ -9,7 +9,7 @@ import Footer from "./components/layout/footer/Footer";
 
 function App() {
   return (
-    <main className="primary-background min-h-screen font-montserrat overflow-x-hidden">
+    <main className="min-h-screen overflow-x-hidden primary_background font-montserrat">
       <Navbar />
       <Hero />
       <AboutMe />

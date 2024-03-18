@@ -14,26 +14,43 @@
   box-sizing: border-box;
 }
 
+.primary_background {
+  background: rgba(245, 245, 245, 0.8);
+  background: -webkit-linear-gradient(
+    to left,
+    rgba(245, 245, 245, 0.8),
+    rgba(245, 245, 245, 0.8)
+  );
+  background: linear-gradient(
+    to right,
+    rgba(245, 245, 245, 0.8),
+    rgba(245, 245, 245, 0.8)
+  );
+}
+
 @layer utilities {
-  .primary-background {
-    background: rgba(245, 245, 245, 0.8);
-    background: -webkit-linear-gradient(
-      to left,
-      rgba(245, 245, 245, 0.8),
-      rgba(245, 245, 245, 0.8)
-    );
-    background: linear-gradient(
-      to right,
-      rgba(245, 245, 245, 0.8),
-      rgba(245, 245, 245, 0.8)
-    );
+
+  .text-h1{
+    @apply text-4xl font-bold 2xl:text-5xl font-poppins;
   }
 
-  .secondary-background {
-    @apply bg-gradient-to-bl from-blue-700 via-blue-800 to-gray-900;
+  .text-h2{
+    @apply text-xl font-semibold 2xl:text-2xl font-poppins;
+  }
+
+  .text-h3{
+    @apply text-lg font-semibold 2xl:text-xl font-poppins;
+  }
+
+  .text-p{
+    @apply text-sm font-medium leading-relaxed xl:text-base 2xl:text-lg;
+  }
+
+  .section {
+    @apply grid w-full grid-cols-1 md:grid-cols-2;
   }
 
   .button {
-    @apply inline-flex items-center justify-center px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500;
+    @apply inline-flex items-center justify-center px-4 py-2 text-white bg-blue-600 border border-transparent rounded-md shadow-sm text-p hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 text-nowrap;
   }
 }

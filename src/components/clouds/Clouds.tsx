@@ -9,9 +9,9 @@ const Clouds = () => {
   };
 
   const clouds = [
-    { duration: 35, scale: 0.65, initialX: "-120%" },
+    { duration: 35, scale: 0.35, initialX: "-120%" },
     { duration: 50, scale: 0.45, initialX: "-70%" },
-    { duration: 25, scale: 0.75, initialX: "-50%" },
+    { duration: 25, scale: 0.65, initialX: "-50%" },
     { duration: 40, scale: 0.35, initialX: "-110%" },
     { duration: 25, scale: 0.65, initialX: "-150%" },
   ];
